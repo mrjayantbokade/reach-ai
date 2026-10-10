@@ -1,0 +1,36 @@
+[project]
+name = "reachai"
+version = "0.1.0"
+description = "Personal outreach intelligence agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "python-dotenv",
+    "pydantic",
+    "pydantic-settings",
+    "typer>=0.12",
+    "rich",
+    "sqlalchemy>=2.0",
+    "alembic",
+    "psycopg[binary]>=3.2",
+    "langgraph",
+    "langchain",
+    "langchain-openai",
+    "openai",
+    "structlog",
+    "pytest",
+    "pytest-asyncio",
+]
+
+[project.optional-dependencies]
+dev = ["black", "ruff", "mypy"]
+
+[tool.uv]
+dev-dependencies = ["black", "ruff", "mypy"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/reachai"]
