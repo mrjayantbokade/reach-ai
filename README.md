@@ -4,6 +4,12 @@ ReachAI is a terminal-based contact and outreach intelligence agent. A LangGraph
 agent decides which LangChain tool to call; deterministic services and PostgreSQL
 perform data validation, matching, and persistence.
 
+# Problem Statement — ReachAI
+During my job search, I faced a recurring problem: whenever I found a job opening at a company, I used browser extensions or other tools to find employees' contact details, such as their work email addresses and phone numbers, so I could reach out directly for referrals or opportunities. However, after sending emails, I often forgot which employees I had contacted, their email addresses, or which companies they worked for.
+When another job opening appeared at the same company, I had to search for employee contacts again, wasting time and sometimes consuming additional credits on paid contact-finding tools.
+ReachAI was built to solve this problem by creating a centralized, intelligent contact database. Whenever I find an employee's contact details for the first time, I can simply tell ReachAI through a conversation, and it saves the contact information along with the associated company. Later, whenever I find a new job opening, I can ask ReachAI to retrieve the relevant company's saved contacts, email addresses, phone numbers, and previous outreach history.
+This eliminates repetitive contact discovery, reduces dependence on paid contact-finding tools, prevents duplicate outreach, and helps me reach out to relevant employees faster whenever new opportunities arise.
+
 ## What it can do
 
 - Save or update contacts with business and personal email addresses and phones.
